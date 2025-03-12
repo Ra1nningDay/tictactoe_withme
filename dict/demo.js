@@ -20,7 +20,8 @@ const tictacDemo = () => {
         if (arr[row][col] === " ") {
             arr[row][col] = symbol;
             printBoard();
-        } else {
+        }
+        else {
             console.log(`คุณใส่ในพื้นที่ซ้ำ`);
         }
     };

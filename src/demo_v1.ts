@@ -23,10 +23,11 @@ const tictacDemov1 = () => {
         }
     };
 
+    //กำหนดการเล่น โดยอิงจากค่าที่ได้รับจากผู้เล่น เพื่อบันทึกว่าผู้เล่นเลือกเคลื่อนที่ในช่องไหน
     const move = () => {
-        const rowInput = readline.question("ใส่แถว (0-2):");
-        const colInput = readline.question("ใส่คอลัมน์ (0-2)");
-        const symbol = readline.question("ใส่สัญลักษณ์ (O หรือ X)");
+        const rowInput = readline.question("Select row (0-2):");
+        const colInput = readline.question("Select col (0-2):");
+        const symbol = readline.question("Select symbol (o : x):");
 
         const row = parseInt(rowInput);
         const col = parseInt(colInput);
