@@ -6,19 +6,18 @@ const tictac = () => {
             board[i].push(" ");
         }
     }
-
     const printBoard = () => {
         console.log("Board TicTacToe:");
         board.map((row) => {
             console.log(row.join(" | "));
         });
     };
-
-    // const play = () => {
-    //     board =
-    // };
-
+    const play = (row, col, symbol) => {
+        if (board[row][col] === " ") {
+            board[row][col] = symbol;
+            printBoard();
+        }
+    };
     printBoard();
 };
-
 tictac();
